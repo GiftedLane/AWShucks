@@ -1,9 +1,10 @@
-# AWShucks a Learning Journey (an ACTIVE Work In Progress) 🌌
+# AWShucks a Learning Journey 🌌🌩
 
 A curated repository documenting my expedition into the vast expanse of Amazon Web Services. From the foundational bricks to advanced service deployments, and from handy command snippets to complete architectures, this repo serves as a personal AWS handbook.
 
 
 
+**_(an ACTIVE Work In Progress)_**
 ## 📜 Table of Contents
 
 - [Fundamentals](./fundamentals/)
