@@ -22,10 +22,16 @@ mysql -h <Aurora_Endpoint> -u <username> -p
 
 ## Resources
 
+#### General EC2 Resources:
 - [AWS EC2 Documentation](https://docs.aws.amazon.com/ec2/)
 - [EC2 FAQs](https://aws.amazon.com/ec2/faqs/)
 - [EC2 Instances.info](https://www.ec2instances.info/)
 - [Spot Instances](https://aws.amazon.com/ec2/spot/)
+
+#### EC2 & Aurora MySQL Integration:
+- [Amazon Aurora Connectivity](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Aurora.Overview.Endpoints.html)
+- [Optimizing the connection](https://aws.amazon.com/blogs/database/best-practices-for-amazon-aurora-mysql-database-configuration/)
+- [VPC with Aurora](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/USER_VPC.html)
 
 ## Additional Notes
 
