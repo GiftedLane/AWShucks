@@ -10,6 +10,7 @@ This document is a quick reference for common Git commands used in day-to-day de
   - [Creating a Branch](#creating-a-branch)
   - [Switching Branches](#switching-branches)
   - [Deleting a Local Branch](#deleting-a-local-branch)
+  - [Pulling a Remote Branch](#pulling-a-remote-branch)
 - [Stashing](#stashing)
 - [Working with Remotes](#working-with-remotes)
 - [Tagging](#tagging)
@@ -44,3 +45,17 @@ Delete a branch on your local filesystem
 git branch -d <branch_name>
 ```
 _Note: Use -D instead of -d to force delete the branch if it has unmerged changes._
+
+### Pulling a Remote Branch
+
+Pull a branch from your remote repo
+
+```bash
+git checkout -b <local-branch-name> origin/<remote-branch-name>
+```
+_Note: This command will create a new local branch that tracks the remote branch._
+
+```bash
+git pull origin <remote-branch-name>
+```
+_Note: If the remote branch has been updated since you last fetched or checked out the branch, you may want to pull the latest changes._
