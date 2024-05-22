@@ -63,6 +63,9 @@ Delving into the heart of DevOps, where development meets operations:
     - [Tips](devops/Containers/Kubernetes/tips.md)
     - [Tricks](devops/Containers/Kubernetes/tricks.md)
     - [Examples](devops/Containers/Kubernetes/examples)
+- **best_practices**
+  - [DevOps Best Practice Branching Strategy](devops/best_practices/devops_best_practice_branching_strategy.md)
+  - [GitLab Repository Naming Conventions](devops/best_practices/gitlab_naming_convention_alts.md)
 
 ### General
 
