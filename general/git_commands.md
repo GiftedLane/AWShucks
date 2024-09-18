@@ -12,6 +12,7 @@ This document is a quick reference for common Git commands used in day-to-day de
   - [Deleting a Local Branch](#deleting-a-local-branch)
   - [Pulling a Remote Branch](#pulling-a-remote-branch)
   - [Pushing to a Remote Branch](#pushing-to-a-remote-branch)
+  - [Prune Remote Branches](#prune-remote-branches)
 - [Git Workflow](#git-workflow)
 - [Stashing](#stashing)
 - [Working with Remotes](#working-with-remotes)
@@ -43,7 +44,7 @@ git init
 git branch -d <branch_name>
 ```
 
-#### Pulling a Remote Branch
+##### Pulling a Remote Branch
 
 ```bash
 # Pull a branch from your remote repo
@@ -56,11 +57,28 @@ git checkout -b <local-branch-name> origin/<remote-branch-name>
 git pull origin <remote-branch-name>
 ```
 
-#### Pushing to a Remote Branch
+##### Pushing to a Remote Branch
 
 ```bash
 # _Example: git push origin feature:develop_
 git push <remote-name> <local-branch-name>:<remote-branch-name>
+```
+
+##### Prune Remote Branches
+
+```bash
+# In the terminal, run the following command to prune remote-tracking branches that no longer exist on the remote:
+git fetch --prune
+```
+
+```bash
+# To confirm that the branch is gone locally, you can list the branches with:
+git branch -r
+```
+
+```bash
+# If you need to remove a specific remote branch manually, use the following command:
+git branch -dr origin/branch-name
 ```
 
 ## Git Workflow
