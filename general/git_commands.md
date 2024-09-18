@@ -12,6 +12,7 @@ This document is a quick reference for common Git commands used in day-to-day de
   - [Deleting a Local Branch](#deleting-a-local-branch)
   - [Pulling a Remote Branch](#pulling-a-remote-branch)
   - [Pushing to a Remote Branch](#pushing-to-a-remote-branch)
+- [Git Workflow](#git-workflow)
 - [Stashing](#stashing)
 - [Working with Remotes](#working-with-remotes)
 - [Tagging](#tagging)
@@ -60,4 +61,42 @@ git pull origin <remote-branch-name>
 ```bash
 # _Example: git push origin feature:develop_
 git push <remote-name> <local-branch-name>:<remote-branch-name>
+```
+
+## Git Workflow
+
+```bash
+# update local repo
+git pull
+```
+```bash
+# display the state of the working directory and the staging area
+git status
+```
+```bash
+# create/checkout new branch
+git checkout -b <new branch name>
+git status
+```
+```bash
+# adds a change in the working directory to the staging area
+git add .
+git status
+```
+```bash
+# captures a snapshot of the project's currently staged changes
+git commit -m "comments go here"
+git status
+```
+```bash
+# push branch to origin
+git push origin <new branch name>
+git status
+```
+#### AFTER MERGE
+```bash
+# switch to the main branch and update local repo
+git checkout main
+git pull
+git branch --delete <branchname>
 ```
