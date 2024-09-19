@@ -37,6 +37,7 @@ git init
 
 ## Branching and Merging
 
+##### Deleting a Local Branch
 ```bash
 # Deleting a Local Branch
 # Delete a branch on your local filesystem
