@@ -40,7 +40,7 @@ git init
 ##### Create a Remote Branch Locally
 ```bash
 # Uses the newer switch command
-git switch -b <new-branch-name> origin/<remote-branch-name>
+git switch -c <local-branch-name> origin/<remote-branch-name>
 ```
 
 ##### Deleting a Local Branch
