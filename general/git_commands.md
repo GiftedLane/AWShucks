@@ -7,7 +7,7 @@ This document is a quick reference for common Git commands used in day-to-day de
 - [Setting Up Git](#setting-up-git)
 - [Basic Git Operations](#basic-git-operations)
 - [Branching and Merging](#branching-and-merging)
-  - [Creating a Branch](#creating-a-branch)
+  - [Create a Remote Branch Locally](#create-a-remote-branch-locally)
   - [Switching Branches](#switching-branches)
   - [Deleting a Local Branch](#deleting-a-local-branch)
   - [Pulling a Remote Branch](#pulling-a-remote-branch)
@@ -36,6 +36,12 @@ git init
 ```
 
 ## Branching and Merging
+
+##### Create a Remote Branch Locally
+```
+# Uses the newer switch command
+git switch -b <new-branch-name> origin/<remote-branch-name>
+```
 
 ##### Deleting a Local Branch
 ```bash
