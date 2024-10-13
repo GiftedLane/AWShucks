@@ -38,7 +38,7 @@ git init
 ## Branching and Merging
 
 ##### Create a Remote Branch Locally
-```
+```bash
 # Uses the newer switch command
 git switch -b <new-branch-name> origin/<remote-branch-name>
 ```
