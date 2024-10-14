@@ -69,8 +69,9 @@ git pull origin <remote-branch-name>
 ##### Fetch All Remote Branches
 
 ```bash
-# _Example: git push origin feature:develop_
-git push <remote-name> <local-branch-name>:<remote-branch-name>
+# This will update your local copy of the remote branches without checking them out
+git fetch --all
+
 ```
 
 ##### List All Remote Branches
