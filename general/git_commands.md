@@ -11,6 +11,8 @@ This document is a quick reference for common Git commands used in day-to-day de
   - [Switching Branches](#switching-branches)
   - [Deleting a Local Branch](#deleting-a-local-branch)
   - [Pulling a Remote Branch](#pulling-a-remote-branch)
+  - [Fetch All Remote Branches](#fetch-all-remote-branches)
+  - [List All Remote Branches](#list-all-remote-branches)
   - [Pushing to a Remote Branch](#pushing-to-a-remote-branch)
   - [Prune Remote Branches](#prune-remote-branches)
 - [Git Workflow](#git-workflow)
@@ -64,11 +66,23 @@ git checkout -b <local-branch-name> origin/<remote-branch-name>
 git pull origin <remote-branch-name>
 ```
 
-##### Pushing to a Remote Branch
+##### Fetch All Remote Branches
 
 ```bash
 # _Example: git push origin feature:develop_
 git push <remote-name> <local-branch-name>:<remote-branch-name>
+```
+
+##### List All Remote Branches
+```bash
+# This will update your local copy of the remote branches without checking them out
+git branch -r
+```
+
+##### Pushing to a Remote Branch
+```bash
+# This will update your local copy of the remote branches without checking them out
+git fetch --all
 ```
 
 ##### Prune Remote Branches
