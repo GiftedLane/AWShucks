@@ -108,11 +108,11 @@ git branch -dr origin/branch-name
 ```bash
 # Keeping Your Branch in Sync with Origin Branch (Rebase & Force Push)
 
-git fetch origin  # Get the latest changes from the remote repository
+git fetch origin  # Get the latest changes from the remote repository; Fetch latest changes from remote (doesn't modify your branch yet)
 
-git rebase origin/main  # Replay your commits on top of the latest main branch
+git rebase origin/main  # Replay your commits on top of the latest main branch; Rebase your local branch onto the updated main branch to keep a linear history
 
-git push --force-with-lease origin <your branch name>  # Update the remote branch after rebase (safely force push)
+git push --force-with-lease origin <your branch name>  # Update the remote branch after rebase (safely force push); Push rebased branch, overwriting remote changes safely (protects others' work)
 ```
 
 ```bash
