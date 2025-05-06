@@ -106,6 +106,16 @@ git branch -dr origin/branch-name
 ## Git Workflow
 
 ```bash
+# Keeping Your Branch in Sync with Origin Branch (Rebase & Force Push)
+
+git fetch origin  # Get the latest changes from the remote repository
+
+git rebase origin/main  # Replay your commits on top of the latest main branch
+
+git push --force-with-lease origin <your branch name>  # Update the remote branch after rebase (safely force push)
+```
+
+```bash
 # update local repo
 git pull
 ```
